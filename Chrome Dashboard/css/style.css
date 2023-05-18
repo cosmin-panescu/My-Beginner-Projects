@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.725px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.662745098);
+}
+
+.container {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+.container #left {
+  position: relative;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container #left #crypto-info .crypto-search {
+  display: flex;
+  gap: 2.5px;
+}
+.container #left #crypto-info .crypto-search input {
+  font-weight: 600;
+  font-size: 1.025rem;
+  letter-spacing: 1.5px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
+.container #left #crypto-info .crypto-search input::-moz-placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.container #left #crypto-info .crypto-search input:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.container #left #crypto-info .crypto-search input::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.container #left #crypto-info #crypto-details p {
+  font-size: 0.85rem;
+  font-weight: bolder;
+  margin-top: 15px 0 0 0;
+}
+.container #left #crypto-info #crypto-details img {
+  width: 60px;
+}
+.container #left #crypto-info #crypto-details #crypto-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.container #right {
+  width: 23%;
+}
+.container #right #weather-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  float: right;
+  padding-right: 1.5rem;
+}
+.container #right #weather-info p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.container #right #weather-info img {
+  width: 80px;
+}
+.container #middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+}
+.container #middle .hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.container #middle .hero .day-time {
+  font-size: 1rem;
+}
+.container #middle p {
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.075rem;
+  padding: 10px;
+}
+.container #middle #time {
+  font-size: 6rem;
+  padding: 0 1.5rem;
+}
+
+#crypto-search-input, #crypto-search-submit {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  background: transparent;
+}
+
+#crypto-search-submit {
+  color: rgba(255, 255, 255, 0.438);
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-background-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 12.5px;
+}/*# sourceMappingURL=style.css.map */

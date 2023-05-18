@@ -1,0 +1,46 @@
+body {
+    background: rgb(224, 251, 252);
+    background: linear-gradient(0deg, rgba(224, 251, 252, 1) 0%, rgba(157, 180, 192, 1) 100%);
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+    height: 93vh;
+    color: #253237;
+}
+
+h1 {
+    color: #000000;
+    font-weight: 900;
+    margin-bottom: 100px;
+}
+
+.title_jack {
+    color: #ffffff
+}
+
+#message-el {
+    font-style: italic;
+}
+
+button {
+    background-color: #253237;
+    width: 400px;
+    padding: 15px 60px;
+    display: block;
+    margin: auto;
+    color: #9DB4C0;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 1.8px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: transform .3s;
+
+    &:hover {
+        background-color: #9DB4C0;
+        color: #253237;
+        transform: scale(1.03);
+    }
+}

@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(63, 63, 63);
+
+}
+
+.top-container {
+    padding-top: 133px;
+    position: relative;
+    background-color: #a6b1e1 ;
+}
+
+.top-container h1 {
+    color: #f4eeff;
+    font-size: 6.25em;
+    margin: 0;
+    font-family: 'Sacramento', cursive;
+}
+
+.top-container .programmer {
+    font-size: 25px;
+    color: #f4eeff;
+}
+
+.bottom-cloud {
+    position: absolute;
+    bottom: 270px;
+    left: 300px;
+}
+.top-cloud {
+    position: absolute;
+    right: 400px;
+    top: 50px;
+}
+.mountain {
+    padding-top: 15px;
+}
+
+.profile img {
+    width: 200px;
+
+}
+
+.skills img {
+    width: 20% ;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #424874;
+}
+
+h3, a {
+    color: #11999E;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+.skill-row p {
+    line-height: 2;
+}
+
+.skill-img1 {
+    float: left;
+    margin-right: 30px;
+}
+
+.skill-img2 {
+    float: right;
+    margin-left: 30px;
+}
+
+hr {
+    border: dotted;
+    border-bottom: none;
+    width: 5%;
+    border-width: 5px;
+    border-color: gray;
+    margin: 100px auto;
+}
+
+.about-me {
+    line-height: 2;
+    width: 30%;
+    margin: auto
+}
+
+.middle-container {
+    margin-top: 100px;
+}
+
+.bottom-container {
+    background-color: #a6b1e1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bottom-container a {
+    margin-right: 50px;
+    font-weight: bolder;
+}
+
+.bottom-container p {
+    color: white;
+    margin-top: 60px;
+}
+
+.contactMePar {
+    width: 50%;
+    line-height: 2;
+    margin: auto;
+}
+
+.bottom-container a:hover {
+    color: white;
+}
+
+.btn:hover {
+    color: black    ;
+}

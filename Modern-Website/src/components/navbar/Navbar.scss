@@ -1,0 +1,134 @@
+.gpt3__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+
+    &-links {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &_logo {
+            margin-right: 2rem;
+
+            img {
+                width: 62.5px;
+                height: 16px;
+            }
+        }
+
+        &_container {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &-sign {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    &-links_container p,
+    &-sign p,
+    &-menu_container p {
+        color: #fff;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: capitalize;
+        line-height: 25px;
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+
+    &-sign button,
+    &-menu_container button {
+        cursor: pointer;
+        padding: .5rem 1rem;
+        color: #fff;
+        font-weight: 500;
+        font-family: var(--font-family);
+        line-height: 25px;
+        font-size: 18px;
+        background: #ff4820;
+        border-radius: 5px;
+        border: 0;
+        outline: none;
+    }
+
+    // Mobile Menu
+    &-menu {
+        margin-right: 1rem;
+        display: none;
+        position: relative;
+
+        svg {
+            cursor: pointer;
+        }
+
+        &_container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: column;
+            text-align: end;
+            padding: 2rem;
+            position: absolute;
+            background: var(--color-footer);
+            top: 40px;
+            right: 0;
+            margin-top: 1rem;
+            min-width: 201px;
+            border-radius: 5px;
+            box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+
+            p {
+                margin: 1rem 0;
+            }
+
+            &-links-sign {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .gpt3__navbar {
+        &-links_container {
+            display: none;
+        }
+
+        &-menu {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt3__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .gpt3__navbar {
+        padding: 2rem;
+
+        &-sign {
+            display: none;
+        }
+
+        &-menu_container {
+            top: 20px;
+
+            &-links-sign {
+                display: block;
+            }
+        }
+    }
+}

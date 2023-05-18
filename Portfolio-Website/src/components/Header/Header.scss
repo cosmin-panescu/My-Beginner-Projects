@@ -1,0 +1,219 @@
+.header {
+    height: 100vh;
+    font-family: "Bai Jamjuree", sans-serif;
+    padding: 0 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    &:hover .header-socials {
+        transform: translateX(0);
+        opacity: 1;
+
+        h2 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font-size: 8rem;
+            font-weight: 800;
+            line-height: 8rem;
+            color: #2a2a2a;
+        }
+
+        h4 {
+            font-size: 1.75rem;
+            color: #626262;
+            pointer-events: none;
+        }
+    }
+
+    .header-socials {
+        transform: translateX(300%);
+        opacity: 0;
+        transition: all 1.5s;
+
+        h2 {
+            color: #626262;
+            pointer-events: none;
+            user-select: none;
+            transition: all 1.65s;
+            opacity: 0;
+        }
+
+        .h-1 {
+            transform: translateY(-100vh);
+        }
+
+        .h-2 {
+            transform: translateY(100vh);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: .65rem;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: #626262;
+                    font-size: 2.5rem;
+                    transition: all .475s ease;
+                    display: flex;
+
+                    &:hover {
+                        color: #2a2a2a;
+                        transform: translateX(-5px);
+                    }
+                }
+
+                .facebook:hover {
+                    color: #1877f2;
+                }
+
+                .instagram:hover {
+                    color: #e1306c;
+                }
+
+                .linkedin:hover {
+                    color: #0077b5;
+                }
+
+                .github:hover {
+                    color: #333;
+                }
+
+                .twitter:hover {
+                    color: #1da1f2;
+                }
+            }
+        }
+    }
+}
+
+// GSAP Text Animation
+.lineChildren {
+    transform: translate(0, 500px);
+}
+
+.lineParent {
+    overflow: hidden;
+}
+
+
+// Media Query
+@media screen and (max-width: 1050px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        &:hover .header-socials {
+            h2 {
+                opacity: 0;
+            }
+        }
+
+        .header-text {
+            h1 {
+                font-size: 6rem;
+                line-height: 6.5rem;
+            }
+        }
+
+        .header-socials {
+            transform: translateX(0);
+            opacity: 1;
+            position: absolute;
+            bottom: 2.5vw;
+            left: 1vw;
+
+            ul {
+                flex-direction: row;
+                gap: .5rem;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        color: #626262;
+                        font-size: 2.5rem;
+                        transition: all .475s ease;
+                        display: flex;
+
+                        &:hover {
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .header {
+        .header-text {
+            h1 {
+                font-size: 10vw;
+                line-height: 10vw;
+            }
+
+            h4 {
+                font-size: 3.5vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .header {
+        .header-socials {
+            ul {
+                li {
+                    a {
+                        font-size: 5.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header {
+        .header-socials {
+            ul {
+                li {
+                    a {
+                        font-size: 6vw;
+                    }
+                }
+            }
+        }
+
+        .header-text {
+            h1 {
+                font-size: 10vw;
+                line-height: 10vw;
+            }
+
+            h4 {
+                font-size: 3.5vw;
+            }
+        }
+    }
+}

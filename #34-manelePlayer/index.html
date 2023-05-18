@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+
+    <audio id="player">
+      <source id="source">
+        Audio not supported
+    </audio>
+
+    <span id="currentlyPlayingSong"></span> <em><span id="currentSong"></span></em>
+
+
+    <div id="controls">
+      <i class="far fa-play-circle fa-5x" onclick="playAudio()"></i>
+      <i class="far fa-pause-circle fa-5x" onclick="pauseAudio()"></i>
+      <p>Volume: </p>
+      <i class="fas fa-volume-down"></i>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.01">
+      <i class="fas fa-volume-up"></i>
+    </div>
+
+    <h4>My Songs:</h4>
+
+  <div id="songList">
+    <!-- <ol>
+      <li>am sa bag doua ziare (manele tech).mp3</li>
+      <li>baterie baterie foc (manele dnb).mp3</li>
+      <li>buna dimineata viata mea (manele dnb).mp3</li>
+      <li>chef de chef (manele dnb).mp3</li>
+      <li>de ce ma minti meduza.mp3</li>
+      <li>hai in Mercedes, hai in avion (manele dnb).mp3</li>
+      <li>sa iubesti doua femei tech.mp3</li>
+      <li>Tchami baga mare sukarime la festival.mp3</li>
+      <li>toate pozele cu tine (manele tech).mp3</li>
+    </ol> -->
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

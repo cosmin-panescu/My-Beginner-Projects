@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+body {
+    color: rgb(206, 185, 185);
+    background: azure;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #2A002A;
+}
+
+.header {
+    height: 100px;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 10px solid rgb(0, 0, 0);
+    border-left: 10px solid rgb(0, 0, 0);
+    border-right: 10px solid rgb(0, 0, 0);
+
+}   
+
+.menu {
+    background-color:azure ;
+    padding: 20px 0 0px 40px;
+    border-bottom: 10px solid rgb(0, 0, 0);
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(77, 73, 109);
+    margin: 130px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+
+}
+.menu a:hover {
+    font-size: 45px;
+    color: rgb(0, 0, 0);   
+}
+
+
+aside {
+    float: left;
+    width: 165px;
+    padding: 30px 0 0 40px;
+}
+h1 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+.main {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 15px 0 20px;
+    padding: 0 10px 10px 10px ;
+    line-height: 25px;
+}
+footer {
+    border-top: 10px solid rgb(0, 0, 0);
+    opacity: 0.6;
+    padding: 20px 0 20px 30px;
+    background-color: rgba(129, 129, 129, 0.308);
+    border-bottom: 10px solid rgb(0, 0, 0);
+    clear: left;
+} 
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+footer a:hover {
+    color: rgb(255, 255, 255);
+}
+.header img {
+      height: 102px;   
+      float: left;
+}
+.title_header{
+    font-size: 100px;
+    text-align: center;
+    margin: -15px;
+    letter-spacing: 40px;
+    opacity: 0.08;
+}
+.title_header:hover {
+    opacity: 0.2;
+}
+article img {
+    padding-top: 20px;
+    width: 410px;
+    float: right;
+    padding-left: 30px;
+}
+article .p1::first-letter  {
+    font-size: 50px;
+    font-weight: bolder;
+    opacity: 0.75;
+}
+article p {
+    letter-spacing: 1px;
+    text-indent: 50px;
+}
+.p1 a {
+    color: wheat;
+    text-decoration: none;
+}
+.pug img {
+    padding-bottom: 10px;
+}
+.p1 {
+    text-align: justify;
+}
+.container1 {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #2A002A;
+}
+article .pug1 {
+    margin: -1px 20px 6px -15px;
+    float: left;
+}
+article .pug2 {
+    margin: -1px -px 6px 0px;
+    float: right;
+}
+article .pug3 {
+    float: initial;
+    margin: 6px 20px -1px -30px;
+}
+.info {
+    margin-top: 280px;
+    float: right;
+}
+.titlusignin {
+    color:whitesmoke;
+}
+.pug1 {
+    opacity: 0.5;
+}
+.pug2 { 
+    opacity: 0.5;
+}
+.pug3 {
+    opacity: 0.5;
+}
+.pug1:hover {
+    opacity: 1;
+}
+.pug2:hover {
+    opacity: 1;
+}
+.pug3:hover {
+    opacity: 1;
+}
+.social ul li {
+    top: -50px;
+    list-style-type: none;
+    float: right;
+    padding-right: 101px;
+    margin-top: 39px;
+}
+.formular {
+    margin-top: -40px;
+    float: left;
+}
+.findme {
+    padding-top: 30px;
+    text-align: right;
+    margin-right: 570px;
+}
+.social ul li a{
+    color: whitesmoke;
+}
+.doarmidle {
+    border-right: 10px solid rgb(0, 0, 0);
+    border-left: 10px solid rgb(0, 0, 0);
+}
+.doarmidle1 {
+    border-right: 10px solid rgb(0, 0, 0);
+    border-left: 10px solid rgb(0, 0, 0);
+    border-bottom: 10px solid rgb(0, 0, 0);
+}
+
+.social ul li .wapp:hover{
+    color: rgb(32, 207, 32);
+}
+.social ul li .fb:hover{
+    color: rgb(0, 60, 255);
+}
+.social ul li .instagramabil:hover{
+    color: rgb(245, 1, 233);
+}
+

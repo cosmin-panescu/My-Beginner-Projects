@@ -1,0 +1,163 @@
+.row {
+    padding: 15px 0;
+    color: #fff;
+}
+
+.row-posters {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 30px 55px;
+    gap: 7px
+}
+
+.row-posters::-webkit-scrollbar {
+    display: none;
+}
+
+.each-movie {
+    border-radius: 13px;
+    transition: all .5s;
+}
+
+.each-movie:hover {
+    transform: scale(1.15);
+    -webkit-box-shadow: 0px 7px 50px 9px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 7px 50px 9px rgba(0, 0, 0, 0.7);
+}
+
+.each-movie:hover .poster-info {
+    width: 100%;
+    display: inline-block;
+}
+
+.poster-info {
+    background-color: #111;
+    display: none;
+    padding: 13.5px;
+}
+
+.each-movie:hover .poster-info .icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.each-movie:hover .poster-info .icons>* {
+    cursor: pointer;
+}
+
+.each-movie:hover .poster-info h2 {
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    padding: 12.5px 0;
+}
+
+.each-movie:hover .poster-info .vote-year {
+    display: flex;
+    justify-content: space-between;
+    font-size: .85rem;
+}
+
+.row-poster {
+    height: 130px;
+    object-fit: contain;
+    transition: transform .5s;
+    border-radius: 4px;
+}
+
+.row-poster:hover {
+    border-radius: 4px 4px 0 0;
+}
+
+.row h2 {
+    padding-left: 55px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: .75px;
+}
+
+.row-hidden-poster {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .row-posters {
+        padding: 20px 40px;
+    }
+
+    .row h2 {
+        padding-left: 40px;
+        font-size: 1.175rem;
+    }
+
+    .row-poster {
+        max-height: 100px;
+    }
+
+    .row-large-poster {
+        max-height: 170px;
+    }
+
+    .each-movie:hover .poster-info h2 {
+        font-size: .875rem;
+        padding: 9.5px 0;
+    }
+
+    .each-movie:hover .poster-info .icons {
+        font-size: .97rem;
+    }
+
+    .poster-info {
+        background-color: #111;
+        display: none;
+        padding: 8.5px;
+    }
+
+    .each-movie:hover .poster-info .vote-year {
+        font-size: .67rem;
+    }
+
+    .each-movie:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .row-posters {
+        padding: 15px 10px;
+    }
+
+    .row h2 {
+        padding-left: 10px;
+        font-size: 1rem;
+    }
+
+    .row-poster {
+        max-height: 60px;
+    }
+
+    .row-large-poster {
+        max-height: 130px;
+    }
+
+    .each-movie:hover .poster-info h2 {
+        font-size: .670rem;
+        padding: 9.5px 0;
+    }
+
+    .each-movie:hover .poster-info .icons {
+        font-size: .7rem;
+    }
+
+    .poster-info {
+        background-color: #111;
+        display: none;
+        padding: 7.5px;
+    }
+
+    .each-movie:hover .poster-info .vote-year {
+        font-size: .57rem;
+    }
+}
